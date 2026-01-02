@@ -1,0 +1,23 @@
+@import 'variables';
+
+//RESET BASICO
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+//CORRECCION DE LINKS
+
+a {
+    text-decoration: none;
+    color: inherit; //HERENCIA
+}
+
