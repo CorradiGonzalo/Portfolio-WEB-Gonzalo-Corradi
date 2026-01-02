@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba($bg-color, 0.9);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30 px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 10%;
+
+    .hero-text {
+        width: 50%;
+        h1 {
+            font-size: 3rem;
+            color: $primary-color;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: $secondary-color;
+        }
+    }
+
+    .hero-image {
+        width: 40%;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+            border: 3px;
+            box-shadow: 0 0 20px rgba($primary-color, 0.5);
+        }
+    }
+}
