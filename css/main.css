@@ -6,13 +6,31 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: rgba(15, 23, 42, 0.95);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
-nav ul {
+header .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+header nav ul {
   display: flex;
   list-style: none;
-  gap: 30 px;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  font-size: 1rem;
+  color: #f8fafc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #38bdf8;
 }
 
 #hero {
@@ -45,6 +63,33 @@ nav ul {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition-behavior: all 0.3s ease;
+  cursor: pointer;
+}
+.btn.primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: 2px solid #38bdf8;
+}
+.btn.primary:hover {
+  background-color: transparent;
+  color: #38bdf8;
+}
+.btn.secondary {
+  background-color: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+}
+.btn.secondary:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -61,4 +106,4 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
+}/*# sourceMappingURL=main.css.map */
