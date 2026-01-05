@@ -139,6 +139,54 @@ footer .copyright {
   padding-top: 20px;
 }
 
+#habilidades {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: rgb(17.6842105263, 27.1157894737, 49.5157894737);
+}
+#habilidades h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#habilidades .skills-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#habilidades .skill-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#habilidades i {
+  font-size: 3rem;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+#habilidades h3 {
+  color: #f8fafc;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+#habilidades p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+#habilidades:hover {
+  transform: translate(-5px);
+  background-color: rgba(56, 189, 248, 0.1);
+  border-color: #38bdf8;
+}
+#habilidades:hover i {
+  color: #38bdf8;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
