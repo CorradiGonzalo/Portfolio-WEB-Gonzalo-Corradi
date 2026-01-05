@@ -214,3 +214,71 @@ footer {
         }
     }
 }
+
+
+//RESPONSIVE
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
+        height: auto;
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    //HERO
+    #hero {
+        flex-direction: column-reverse;
+        padding: 140px 5% 50px;
+        text-align: center;
+        justify-content: center;
+
+        .hero-text {
+            width: 100%;
+
+            h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 0 20px;
+            }
+        }
+        .hero-image {
+            width: 70%;
+            margin-bottom: 30px;
+
+            img {
+                box-shadow: 0 0 15px rgba($primary-color, 0.3);
+            }
+        }
+    }
+    #proyectos, #habilidades {
+        padding: 60px 5%;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

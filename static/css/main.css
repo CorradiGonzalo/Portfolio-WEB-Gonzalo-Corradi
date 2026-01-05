@@ -187,6 +187,59 @@ footer .copyright {
   color: #38bdf8;
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 5%;
+    height: auto;
+  }
+  header .logo {
+    margin-bottom: 10px;
+  }
+  header nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+  #hero {
+    flex-direction: column-reverse;
+    padding: 140px 5% 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  #hero .hero-text {
+    width: 100%;
+  }
+  #hero .hero-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  #hero .hero-text p {
+    font-size: 1rem;
+  }
+  #hero .hero-text .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  #hero .hero-image {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  #hero .hero-image img {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+  }
+  #proyectos, #habilidades {
+    padding: 60px 5%;
+  }
+  #proyectos h2, #habilidades h2 {
+    font-size: 2rem;
+  }
+}
 .btn {
   display: inline-block;
   padding: 10px 20px;
