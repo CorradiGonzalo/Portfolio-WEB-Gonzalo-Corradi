@@ -116,6 +116,15 @@ footer .social-links .social-btn {
   color: #f8fafc;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  text-decoration: none;
+}
+footer .social-links .social-btn i.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+footer .social-links .social-btn i.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 footer .social-links .social-btn:hover {
   background-color: #38bdf8;

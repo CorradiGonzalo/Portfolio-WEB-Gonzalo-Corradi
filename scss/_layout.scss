@@ -129,6 +129,18 @@ footer {
             color: $text-color;
             transition: all 0.3s ease;
             border: 1px solid transparent;
+            text-decoration: none;
+            i {
+                &.fa-brands{
+                    font-family: "Font Awesome 6 Brands";
+                    font-weight: 400;
+                }
+
+                &.fa-solid {
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                }
+            }
 
             &:hover {
                 background-color: $primary-color;
