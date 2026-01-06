@@ -35,77 +35,38 @@
         </div>
 
         <div class="hero-image">
-            <img src="{{ url_for('static', filename='assets/img/foto-perfil.png') }}" alt="Foto de Gonzalo Corradi">
+            <img src="{{ url_for('static', filename='assets/img/foto-gonzalo.jpeg') }}" alt="Foto de Gonzalo Corradi">
         </div>
     </section>
 
     <section id="proyectos">
         <h2>Proyectos & Roadmap</h2>
         <div class="project-grid">
+            {% for proyecto in proyectos %}
+
             <article class="project-card wip">
                 <div class="card-header">
                     <span class="status-badge">
-                        🚧 En Desarrollo
+                        🚧 {{ proyecto.estado }}
                     </span>
                 </div>
 
                 <div class="card-content">
-                    <h3>Sistema de Gestion Industrial</h3>
-                    <p>Sistema para optimizar costos en empresa pulvimetalurgica. Parametrizacion de tiempos y transformacion de datos en informacion estrategica.</p>
+                    <h3>{{ proyecto.titulo }}</h3>
+                    <p>{{ proyecto.descripcion}}</p>
 
                     <div class="tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Data Engineering</span>
+                        {% for tag in proyecto.get_tags_list() %}
+                        <span>{{ tag }}</span>
+                        {% endfor %}
                     </div>
 
                     <div class="card-actions">
-                        <a href="#"  class="btn secondary small">Leer Documentacion</a>
+                        <a href="{ proyecto.link }" class="btn-secondary small">Ver Proyecto</a>
                     </div>
                 </div>
             </article>
-
-            <article class="project-card wip">
-                <div class="card-header">
-                    <span class="status-badge"> 🚧 En Desarrollo</span>
-                </div>
-
-                <div class="card-content">
-                    <h3>Smart Task Planner</h3>
-                    <p>Planificador de escritorio con logica de alertas recurrentes y persistentes de datos. Solucion para seguimiento de ventas y tareas clinicas.</p>
-
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Deskton App</span>
-                        <span>SQLite</span>
-                    </div>
-
-                    <div class="card-actions">
-                        <a href="#" class="btn secondary small">Ver Planificacion</a>
-                    </div>
-                </div>
-            </article>
-
-             <article class="project-card wip">
-                <div class="card-header">
-                    <span class="status-badge"> 🚧 En Desarrollo</span>
-                </div>
-
-                <div class="card-content">
-                    <h3>WEB Antares S.R.L</h3>
-                    <p>Pagina Web Comercial para Antares S.R.L</p>
-
-                    <div class="tags">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-
-                    <div class="card-actions">
-                        <a href="#" class="btn secondary small">Ver Planificacion</a>
-                    </div>
-                </div>
-            </article>
+            {% endfor %}
         </div>
     </section>
 
@@ -153,7 +114,7 @@
                 <a href="mailto:corradi.gonzalo@gmail.com" class="social-btn">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-                <a href="https://linkedin.com/in/GonzaloCorradi" target="_blank" class="social-btn">
+                <a href="www.linkedin.com/in/gonzalo-corradi-096641195" target="_blank" class="social-btn">
                 <i class="fa-brands fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/CorradiGonzalo" target="_blank" class="social-btn">
