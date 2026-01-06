@@ -61,6 +61,6 @@ def home():
     mis_proyectos = Proyecto.query.all()
     return render_template('index.html', proyectos=mis_proyectos)
 
+crear_datos_iniciales()
 if __name__=='__main__':
-    crear_datos_iniciales()
     app.run(debug=True)
