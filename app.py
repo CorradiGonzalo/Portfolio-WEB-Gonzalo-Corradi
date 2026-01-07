@@ -46,7 +46,7 @@ def crear_datos_iniciales():
                 descripcion = "Planificador de escritorio con alertas recurrentes y base de datos local",
                 tags = "Python, Tkinter, SQLite",
                 estado = "En Desarrollo",
-                link = "assets/docs/SmartTaskPlanner_ES_EN.pdf"
+                link = "/static/assets/docs/SmartTaskPlanner_ES_EN.pdf"
             )
 
             db.session.add(p1)
