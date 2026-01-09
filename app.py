@@ -37,7 +37,7 @@ def crear_datos_iniciales():
                 titulo = "Sistema de Gestion Industrial",
                 descripcion = "Sistema para optimizar costos y parametrizar tiempos de produccion.",
                 tags = "Python, Pandas, Data Engineering",
-                estado = "En Desarrollo",
+                estado = "🚧 En Desarrollo",
                 link = "#"
             )
 
@@ -47,6 +47,15 @@ def crear_datos_iniciales():
                 tags = "Python, Tkinter, SQLite",
                 estado = "Finalizado",
                 link = "/static/assets/docs/SmartTaskPlanner_ES_EN.pdf"
+            )
+
+            p3 = Proyecto(
+                titulo = "Web Mi Pequeña Gran Estrella",
+                descripcion = "Web de local de venta de ropa" \
+                "Incluye catalogo (stock incluido), carrito de compras, gestion de usuarios y gestion de cobros",
+                tags = "Pythom, Django, HTML, SCSS",
+                estado = "🚧 En Desarrollo",
+                link = "#"
             )
 
             db.session.add(p1)
