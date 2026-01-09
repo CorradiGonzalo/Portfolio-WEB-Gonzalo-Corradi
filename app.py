@@ -60,6 +60,7 @@ def crear_datos_iniciales():
 
             db.session.add(p1)
             db.session.add(p2)
+            db.session.add(p3)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
