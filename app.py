@@ -46,7 +46,7 @@ def crear_datos_iniciales():
                 descripcion = "Planificador de escritorio con alertas recurrentes y base de datos local",
                 tags = "Python, Tkinter, SQLite",
                 estado = "Finalizado",
-                link = "/static/assets/docs/SmartTaskPlanner_ES_EN.pdf"
+                link = "https://github.com/CorradiGonzalo/SmartTaskPlanner"
             )
 
             p3 = Proyecto(
@@ -55,12 +55,21 @@ def crear_datos_iniciales():
                 "Incluye catalogo (stock incluido), carrito de compras, gestion de usuarios y gestion de cobros",
                 tags = "Pythom, Django, HTML, SCSS",
                 estado = "🚧 En Desarrollo",
-                link = "#"
+                link = "https://github.com/CorradiGonzalo/Web-MiPequenaGranEstrella"
+            )
+
+            p4 = Proyecto (
+                titulo = "Smart Recruitment Inbox Manager (n8n Automation)",
+                descripcion = "Sistema de automatización de flujos de trabajo diseñado para optimizar la búsqueda laboral y la gestión de oportunidades. Integrando la API de Gmail con Google Sheets y Telegram mediante n8n, el sistema procesa correos entrantes en tiempo real, aplica lógica condicional para filtrar propuestas de plataformas clave (LinkedIn, Workana, Freelancer) y genera alertas instantáneas en mi celular.",
+                tags = "n8n, Gmail API, Google Sheets API, Telegram Bot API, JSON Logic",
+                estado = "🚧 En Desarrollo",
+                link = "static/assets/img/Automatizacion-n8n.png"
             )
 
             db.session.add(p1)
             db.session.add(p2)
             db.session.add(p3)
+            db.session.add(p4)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
