@@ -37,7 +37,7 @@ def crear_datos_iniciales():
                 titulo = "Sistema de Gestion Industrial",
                 descripcion = "Sistema para optimizar costos y parametrizar tiempos de produccion.",
                 tags = "Python | Pandas | Data Engineering",
-                estado = "🚧 En Desarrollo",
+                estado = "🚧 En Desarrollo", #🚀
                 link = "#"
             )
 
@@ -45,7 +45,7 @@ def crear_datos_iniciales():
                 titulo = "Smart Task Planner",
                 descripcion = "Planificador de escritorio con alertas recurrentes y base de datos local",
                 tags = "Python | Tkinter | SQLite",
-                estado = "Finalizado",
+                estado = "📦 Finalizado",
                 link = "https://github.com/CorradiGonzalo/SmartTaskPlanner"
             )
 
@@ -54,16 +54,17 @@ def crear_datos_iniciales():
                 descripcion = "Web de local de venta de ropa" \
                 "Incluye catalogo (stock incluido), carrito de compras, gestion de usuarios y gestion de cobros",
                 tags = "Pythom | Django | HTML | SCSS",
-                estado = "🚧 En Desarrollo",
+                estado = "🚧 En Desarrollo", #🚀
                 link = "https://github.com/CorradiGonzalo/Web-MiPequenaGranEstrella"
             )
 
             p4 = Proyecto (
-                titulo = "Smart Recruitment Inbox Manager (n8n Automation)",
-                descripcion = "Sistema de automatización de flujos de trabajo diseñado para optimizar la búsqueda laboral y la gestión de oportunidades. Integrando la API de Gmail con Google Sheets y Telegram mediante n8n, el sistema procesa correos entrantes en tiempo real, aplica lógica condicional para filtrar propuestas de plataformas clave (LinkedIn, Workana, Freelancer) y genera alertas instantáneas en mi celular.",
+                titulo = "Gmail-Inbox-Cleaner (n8n Automation)",
+                descripcion = "Este workflow convierte una bandeja de entrada caótica en un pipeline organizado de oportunidades. Diseñado para automatizar la gestión de correos electrónicos, el sistema actúa como un filtro inteligente que separa el 'ruido' (Spam/Promociones) de la información crítica (Propuestas laborales de LinkedIn, Workana, Freelancer)."
+                "El bot lee los correos no leídos, extrae metadatos clave (Remitente, Asunto, Fecha), y aplica lógica condicional para decidir su destino: una base de datos de seguimiento o la papelera.",
                 tags = "n8n Workflow | Gmail API | Google Sheets API | Telegram Bot API | JSON Logic",
-                estado = "🚧 Pausado",
-                link = "static/assets/img/Automatizacion-n8n.png"
+                estado = "🤖 Finalizado",
+                link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/02_Gmail_Inbox_Cleaner"
             )
 
             p5 = Proyecto(
@@ -77,8 +78,16 @@ def crear_datos_iniciales():
                 "Alertas en Tiempo Real: Integración con Discord API para notificaciones push." \
                 "Persistencia de Datos: Registro histórico de fluctuaciones en Google Sheets.",
                 tags = "n8n Workflow | Web Scraping | Discord Webhooks | Google Sheets API",
-                estado = "Finalizado",
-                link = "static/assets/img/BuscadorDePrecios"
+                estado = "🤖 Finalizado",
+                link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/03_Price_Tracker_Discord"
+            )
+
+            p6 = Proyecto (
+                titulo = "AI-Job-Hunter (n8n Automation)",
+                descripcion = "Este workflow automatiza la búsqueda y análisis de ofertas laborales. Utiliza un modelo LLM (Groq) para leer feeds RSS, interpretar las descripciones y filtrar solo aquellas relevantes para mi perfil.",
+                tags = "n8n Workflow | Groq LLM | RSS Feeds | Google Sheets",
+                estado = "🤖 Finalizado",
+                link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/01_AI_Job_Hunter"
             )
 
             db.session.add(p1)
@@ -86,6 +95,7 @@ def crear_datos_iniciales():
             db.session.add(p3)
             db.session.add(p4)
             db.session.add(p5)
+            db.session.add(p6)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
