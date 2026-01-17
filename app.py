@@ -60,8 +60,8 @@ def crear_datos_iniciales():
 
             p4 = Proyecto (
                 titulo = "Gmail-Inbox-Cleaner (n8n Automation)",
-                descripcion = "Este workflow convierte una bandeja de entrada caótica en un pipeline organizado de oportunidades. Diseñado para automatizar la gestión de correos electrónicos, el sistema actúa como un filtro inteligente que separa el 'ruido' (Spam/Promociones) de la información crítica (Propuestas laborales de LinkedIn, Workana, Freelancer)."
-                "El bot lee los correos no leídos, extrae metadatos clave (Remitente, Asunto, Fecha), y aplica lógica condicional para decidir su destino: una base de datos de seguimiento o la papelera.",
+                descripcion = "Este workflow convierte una bandeja de entrada caótica en un pipeline organizado de oportunidades. Diseñado para automatizar la gestión de correos electrónicos, el sistema actúa como un filtro inteligente que separa el 'ruido' (Spam/Promociones) de la información crítica (Propuestas laborales de LinkedIn, Workana, Freelancer). "
+                "El bot lee los correos no leídos, extrae metadatos clave (Remitente, Asunto, Fecha), y aplica lógica condicional para decidir su destino: una base de datos de seguimiento o la papelera. ",
                 tags = "n8n Workflow | Gmail API | Google Sheets API | Telegram Bot API | JSON Logic",
                 estado = "🤖 Finalizado",
                 link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/02_Gmail_Inbox_Cleaner"
@@ -69,14 +69,14 @@ def crear_datos_iniciales():
 
             p5 = Proyecto(
                 titulo = "E-commerce Price Tracker & Alert Bot Stack (n8n Automation)",
-                descripcion = "Diseñé un bot de monitoreo de precios automatizado para detectar oportunidades de mercado en tiempo real en plataformas de e-commerce (MercadoLibre)." \
-                "El sistema se ejecuta periódicamente, realiza scraping del sitio web objetivo para extraer el precio actual y lo cruza con una base de datos histórica en Google Sheets. Mediante lógica condicional, evalúa si el precio ha bajado respecto al último registro o si cumple con un objetivo de compra definido." \
-                "Si se detecta una oportunidad, el bot dispara una alerta instantánea a un canal privado de Discord, permitiendo tomar decisiones de compra inmediatas sin necesidad de monitoreo manual." \
+                descripcion = "Diseñé un bot de monitoreo de precios automatizado para detectar oportunidades de mercado en tiempo real en plataformas de e-commerce (MercadoLibre). " \
+                "El sistema se ejecuta periódicamente, realiza scraping del sitio web objetivo para extraer el precio actual y lo cruza con una base de datos histórica en Google Sheets. Mediante lógica condicional, evalúa si el precio ha bajado respecto al último registro o si cumple con un objetivo de compra definido. " \
+                "Si se detecta una oportunidad, el bot dispara una alerta instantánea a un canal privado de Discord, permitiendo tomar decisiones de compra inmediatas sin necesidad de monitoreo manual. " \
                 "Puntos Clave:" \
-                "Web Scraping: Extracción de datos no estructurados (HTML Parsing) de sitios dinámicos." \
-                "Lógica de Negocio: Algoritmo de comparación de precios y cálculo de variación porcentual." \
-                "Alertas en Tiempo Real: Integración con Discord API para notificaciones push." \
-                "Persistencia de Datos: Registro histórico de fluctuaciones en Google Sheets.",
+                "Web Scraping: Extracción de datos no estructurados (HTML Parsing) de sitios dinámicos; " \
+                "Lógica de Negocio: Algoritmo de comparación de precios y cálculo de variación porcentual; " \
+                "Alertas en Tiempo Real: Integración con Discord API para notificaciones push; " \
+                "Persistencia de Datos: Registro histórico de fluctuaciones en Google Sheets; ",
                 tags = "n8n Workflow | Web Scraping | Discord Webhooks | Google Sheets API",
                 estado = "🤖 Finalizado",
                 link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/03_Price_Tracker_Discord"
