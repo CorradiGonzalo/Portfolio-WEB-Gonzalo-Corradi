@@ -90,12 +90,21 @@ def crear_datos_iniciales():
                 link = "https://github.com/CorradiGonzalo/n8n-automation-portfolio/tree/main/01_AI_Job_Hunter"
             )
 
+            p7 = Proyecto(
+                titulo = "Dashboard de Precios e Inflación",
+                descripcion = "Herramienta de BI que analiza volatilidad de precios desde Excel o datos simulados.",
+                tags = "Python, Streamlit, Pandas, Data Viz",
+                estado = "🚀 Finalizado", 
+                link = "https://dashboard-de-precios-interactivo.streamlit.app/"
+            )
+
             db.session.add(p1)
             db.session.add(p2)
             db.session.add(p3)
             db.session.add(p4)
             db.session.add(p5)
             db.session.add(p6)
+            db.session.add(p7)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
