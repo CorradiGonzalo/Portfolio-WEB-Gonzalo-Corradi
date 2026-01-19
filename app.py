@@ -98,6 +98,14 @@ def crear_datos_iniciales():
                 link = "https://dashboard-de-precios-interactivo.streamlit.app/"
             )
 
+            p8 = Proyecto( 
+                titulo = "Generador de Presupuestos",
+                descripcion = "Generador automatico de presupuestos, le cargas los datos y genera el PDF!",
+                tags = "Python | Tkinter | FPDF",
+                estado = "🚧 En Desarrollo",#📦 Finalizado
+                link = "https://github.com/CorradiGonzalo/CotizadorAutomatico"
+            )
+
             db.session.add(p1)
             db.session.add(p2)
             db.session.add(p3)
@@ -105,6 +113,7 @@ def crear_datos_iniciales():
             db.session.add(p5)
             db.session.add(p6)
             db.session.add(p7)
+            db.session.add(p8)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
