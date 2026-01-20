@@ -102,7 +102,7 @@ def crear_datos_iniciales():
                 titulo = "Generador de Presupuestos",
                 descripcion = "Generador automatico de presupuestos, le cargas los datos y genera el PDF!",
                 tags = "Python | Tkinter | FPDF",
-                estado = "🚧 En Desarrollo",#📦 Finalizado
+                estado = "📦 Finalizado",
                 link = "https://github.com/CorradiGonzalo/CotizadorAutomatico"
             )
 
