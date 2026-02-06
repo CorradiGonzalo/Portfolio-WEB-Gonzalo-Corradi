@@ -106,6 +106,14 @@ def crear_datos_iniciales():
                 link = "https://github.com/CorradiGonzalo/CotizadorAutomatico"
             )
 
+            p9 = Proyecto( 
+                titulo = "Control de Stock Industrial",
+                descripcion = "Sistema de gestión de inventario y cotización diseñado específicamente para talleres metalúrgicos y de mecanizado. Permite el control exhaustivo de herramientas de corte, materia prima (barras, polvos) e insumos varios, manejando especificaciones técnicas complejas y conversión automática de unidades.",
+                tags = "Java | Mentalidad de Negocio | SQL",
+                estado = "📦 Finalizado",
+                link = "https://github.com/CorradiGonzalo/Control-Stock"
+            )
+
             db.session.add(p1)
             db.session.add(p2)
             db.session.add(p3)
@@ -114,6 +122,7 @@ def crear_datos_iniciales():
             db.session.add(p6)
             db.session.add(p7)
             db.session.add(p8)
+            db.session.add(p9)
             db.session.commit()
             print("Base de datos creada y cargada existosamente.")
 
